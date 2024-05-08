@@ -21,7 +21,7 @@ social: true # includes social icons at the bottom of the page
 
 Hello!
 
-As a highly motivated software engineer with a passion for innovation, I thrive on building cutting-edge solutions that drive real impact. With a solid academic background forged at the esteemed [Indian Institute of Technology (IIT) Guwahati](https://www.iitg.ac.in/) for my bachelor's and the [University of California San Diego (UCSD)](https://ucsd.edu) for my master's, I've honed expertise in computer science, full-stack web development, machine learning, and natural language processing.
+As a highly motivated aspiring software engineer with a passion for innovation, I thrive on building cutting-edge solutions that drive real impact. With a solid academic background forged at the esteemed [Indian Institute of Technology (IIT) Guwahati](https://www.iitg.ac.in/) for my bachelor's and the [University of California San Diego (UCSD)](https://ucsd.edu) for my master's, I've honed expertise in computer science, full-stack web development, machine learning, and natural language processing.
 
 My internship experience at Adobe's Multimodal Content Lab allowed me to develop and patent a novel pipeline for enhancing multimodal documents, showcasing my ability to tackle complex challenges and deliver impactful results. I have further honed my technical skills in HTML, CSS, JavaScript, TypeScript, Node.js, Express.js, Nest.js, React.js through various projects.
 
