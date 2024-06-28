@@ -8,7 +8,7 @@ img: assets/img/project_1.png
 ---
 
 This was my thesis project completed under the guidance of Dr. Anirban Dasgupta, in collaboration with my batchmate Aishik Rakshit, during the final year of my undergraduate studies at the Indian Institute of Technology, Guwahati.
-The [paper] (https://ieeexplore.ieee.org/document/10183509) for this project is available in IEEE Xplore Library for all the latest papers relating to NeRF-SLAM.
+The [paper](https://ieeexplore.ieee.org/document/10183509) for this project is available in IEEE Xplore Library for all the latest papers relating to NeRF-SLAM.
 
 # [A Novel Pipeline for Improving Optical Character Recognition through Post-processing Using Natural Language Processing](https://ieeexplore.ieee.org/document/10183509)
 
