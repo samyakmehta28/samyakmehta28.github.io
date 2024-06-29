@@ -8,9 +8,9 @@ category: ML & AI
 ---
 
 This was my course project for the course Advanced Data Driven Text Mining, completed under the guidance of Professor Jingbo Shang, in collaboration with my batchmates Kashish Jain and Smruthi Gowtham, during the SP24 of my graduate studies at the University of California, San Diego.
-The report for this project is available [here](https://drive.google.com/file/d/1plrzqbWJn1GdyKax8QPFQxQfhHGs0SU6/view?usp=drive_link).
+The report for this project is available [here](https://drive.google.com/file/d/1plrzqbWJn1GdyKax8QPFQxQfhHGs0SU6/view?usp=sharing).
 
-# [Logicator: Enhancing Logical Reasoning in Large Language Models through Structured Problem Representation](https://drive.google.com/file/d/1plrzqbWJn1GdyKax8QPFQxQfhHGs0SU6/view?usp=drive_link)
+# [Logicator: Enhancing Logical Reasoning in Large Language Models through Structured Problem Representation](https://drive.google.com/file/d/1plrzqbWJn1GdyKax8QPFQxQfhHGs0SU6/view?usp=sharing)
 
 The Logicator framework aims to improve the logical reasoning abilities of large language models (LLMs), particularly in tasks like family relationship puzzles and seating arrangements. The approach involves converting unstructured questions into a standardized format using Named Entity Recognition (NER) and Relationship Extraction (RE). A Retrieval-Augmented Generation (RAG) framework is then used to provide relevant facts. Logicator outperforms baseline models such as GPT-3.5-turbo, achieving 98.70% accuracy on structured family puzzles and 52.38% on unstructured ones.
 
