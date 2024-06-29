@@ -5,7 +5,7 @@ permalink: /projects/
 description: My Thesis and Projects
 nav: true
 nav_order: 3
-display_categories: [research, self]
+display_categories: [Software Engineering, ML & AI]
 horizontal: false
 ---
 

@@ -1,81 +1,61 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
+title: Recommender Systems Project
+description: Under Professor Julian McAuley, I conducted an exploratory data analysis on the UCI Bank Marketing dataset and applied machine learning techniques such as Logistic Regression, Neural Networks, Random Forests, KNN, and XGBoost for predictive modeling.
 img: assets/img/3.jpg
 importance: 2
-category: work
-giscus_comments: true
+category: ML & AI
+img: assets/img/project_2.png
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Please find the report for this project [here](https://drive.google.com/file/d/1Wn86lcLZUJkRDxIk1y7nk2yCSkmB23hV/view?usp=sharing).
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+# Enhancing Term Deposit Subscription Recommendations in Banking through Machine Learning
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+### Project Overview:
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+In the modern banking landscape, characterized by intense competition for deposits and regulatory challenges, efficient marketing strategies are critical. This project focuses on analyzing and optimizing a marketing campaign from Banco de Portugal, aimed at increasing client subscriptions to term deposits during and after the Great Recession. The primary goal is to develop robust machine learning models to predict the likelihood of a client subscribing to a term deposit based on various features related to client demographics, economic conditions, and past interactions.
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+### Objectives:
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+- To assess the effectiveness of various machine learning models in predicting the success of marketing campaigns.
+- To provide banks with data-driven recommendations for targeting potential clients more effectively.
+- To improve the precision of direct marketing efforts in the banking sector, thereby increasing the conversion rates for term deposit subscriptions.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+### Methods:
 
-{% raw %}
+- Data Analysis and Preprocessing:
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+  - The dataset, containing 41,188 samples with 21 features, was collected from a Portuguese retail bank.
+  - Features include both categorical (e.g., job, education, marital status) and numerical data (e.g., age, Euribor rate).
+  - The data underwent extensive exploratory data analysis (EDA) to understand feature distributions and correlations addressing missing values and imbalances.
 
-{% endraw %}
+- Feature Engineering:
+
+  - Critical features influencing term deposit subscription were identified through descriptive analysis and hypothesis testing.
+  - Feature selection techniques were applied to enhance model performance.
+
+- Model Development:
+
+  - Various machine learning models, including linear regression, neural networks, support vector machines (SVM), random forests, and XGBoost, were employed to classify the likelihood of term deposit subscription.
+  - Models were evaluated based on accuracy, precision, recall, and area under the curve (AUC) metrics.
+
+- Handling Class Imbalance:
+  - Given the imbalance in the dataset, techniques such as SMOTE (Synthetic Minority Over-sampling Technique) were used to enhance the model's ability to correctly classify minority class samples (clients who subscribed to term deposits).
+- Key Findings:
+
+  - Performance Metrics: The best-performing model was XGBoost, achieving a significant AUC score, indicating high predictive accuracy.
+  - Feature Importance: Features such as age, job, education, and previous interactions with the bank emerged as significant predictors of term deposit subscriptions.
+
+- Marketing Insights: The analysis provided actionable insights into the profiles of clients most likely to respond positively to marketing campaigns, enabling more targeted and efficient marketing strategies.
+
+### Conclusions:
+
+The project successfully demonstrated the application of machine learning to enhance the marketing strategies of a banking institution. By identifying key client features and developing robust predictive models, the project highlights the potential for significant improvements in marketing efficiency and conversion rates for term deposits.
+
+### Future Work:
+
+- Further refinement of models with more advanced techniques and larger datasets could improve accuracy.
+- Exploring additional features and external economic indicators could enhance predictive capabilities.
+- Integration of the developed models into a real-time decision-making system for dynamic marketing strategies.
+- This project exemplifies how data-driven approaches can revolutionize marketing efforts in the banking sector, providing a competitive edge in attracting and retaining clients for term deposit products.
