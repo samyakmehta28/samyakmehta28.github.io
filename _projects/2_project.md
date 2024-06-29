@@ -2,7 +2,6 @@
 layout: page
 title: Recommender Systems Project
 description: Under Professor Julian McAuley, I conducted an exploratory data analysis on the UCI Bank Marketing dataset and applied machine learning techniques such as Logistic Regression, Neural Networks, Random Forests, KNN, and XGBoost for predictive modeling.
-img: assets/img/3.jpg
 importance: 2
 category: ML & AI
 img: assets/img/project_2.png
@@ -42,12 +41,15 @@ In the modern banking landscape, characterized by intense competition for deposi
 
 - Handling Class Imbalance:
   - Given the imbalance in the dataset, techniques such as SMOTE (Synthetic Minority Over-sampling Technique) were used to enhance the model's ability to correctly classify minority class samples (clients who subscribed to term deposits).
-- Key Findings:
 
-  - Performance Metrics: The best-performing model was XGBoost, achieving a significant AUC score, indicating high predictive accuracy.
-  - Feature Importance: Features such as age, job, education, and previous interactions with the bank emerged as significant predictors of term deposit subscriptions.
+### Key Findings:
 
-- Marketing Insights: The analysis provided actionable insights into the profiles of clients most likely to respond positively to marketing campaigns, enabling more targeted and efficient marketing strategies.
+- Performance Metrics: The best-performing model was XGBoost, achieving a significant AUC score, indicating high predictive accuracy.
+- Feature Importance: Features such as age, job, education, and previous interactions with the bank emerged as significant predictors of term deposit subscriptions.
+
+### Marketing Insights:
+
+The analysis provided actionable insights into the profiles of clients most likely to respond positively to marketing campaigns, enabling more targeted and efficient marketing strategies.
 
 ### Conclusions:
 
