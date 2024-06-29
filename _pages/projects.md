@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: My Thesis and Projects
+description: My Research and Projects
 nav: true
 nav_order: 3
 display_categories: [Software Engineering, ML & AI]
