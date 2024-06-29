@@ -1,80 +1,51 @@
 ---
 layout: page
-title: project 5
-description: a project with a background image
-img: assets/img/1.jpg
-importance: 3
-category: fun
+title: Logicator
+description: Logicator is a proposed model to improve logical reasoning in large language models by using structured data and Retrieval-Augmented Generation (RAG), significantly enhancing performance on family relationship puzzles and seating arrangements compared to baseline models like GPT-3.5-turbo.
+img: assets/img/project_5.jpg
+importance: 5
+category: ML & AI
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+This was my course project for the course Advanced Data Driven Text Mining, completed under the guidance of Professor Jingbo Shang, in collaboration with my batchmates Kashish Jain and Smruthi Gowtham, during the SP24 of my graduate studies at the University of California, San Diego.
+The report for this project is available [here](https://drive.google.com/file/d/1plrzqbWJn1GdyKax8QPFQxQfhHGs0SU6/view?usp=drive_link).
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+# [Logicator: Enhancing Logical Reasoning in Large Language Models through Structured Problem Representation](https://drive.google.com/file/d/1plrzqbWJn1GdyKax8QPFQxQfhHGs0SU6/view?usp=drive_link)
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+The Logicator framework aims to improve the logical reasoning abilities of large language models (LLMs), particularly in tasks like family relationship puzzles and seating arrangements. The approach involves converting unstructured questions into a standardized format using Named Entity Recognition (NER) and Relationship Extraction (RE). A Retrieval-Augmented Generation (RAG) framework is then used to provide relevant facts. Logicator outperforms baseline models such as GPT-3.5-turbo, achieving 98.70% accuracy on structured family puzzles and 52.38% on unstructured ones.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+### Related Work:
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+The report references significant contributions in the field, such as SAT-Aided Language Models (SATLM) and LOGIC-LM, which integrate LLMs with symbolic solvers to enhance logical reasoning. The report also mentions the "Zero-shot-CoT" method, which uses prompts to improve multi-step reasoning in LLMs.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+### Dataset:
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+- Family Relationship Puzzle Dataset: Contains two types of questions:
+  - Type-1: Structured questions with a fixed format.
+  - Type-2: Unstructured questions with varying formats, converted into a structured format.
+- Seating Arrangement Dataset: Focuses on positional reasoning tasks involving linear and circular arrangements.
 
-{% raw %}
+### Methodology:
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+- Dataset Preparation: Creation of complex family tree logical reasoning tasks.
+- NER and RE: Identification and extraction of relevant entities and their relationships.
+- Standardization: Conversion of data into a consistent format.
+- RAG Framework: Retrieval of relevant context and instructions from a large corpus.
+- Prompting GPT-3.5-Turbo: Generation of answers using the retrieved and standardized data.
+- Evaluation: Assessment of the generated answers against correct responses.
 
-{% endraw %}
+### Entity Recognition:
+
+The framework uses NLTK for recognizing proper nouns and a fine-tuned RoBERTa model for identifying both proper nouns and generic entities. The fine-tuned RoBERTa model shows superior performance in recognizing diverse entities.
+
+### Relationship Extraction and Sentence Reformation:
+
+Logicator employs a zero-shot approach using the OpenAI API to extract and standardize relationships between entities. This process involves identifying relationships from sentences and reformulating them into a structured format suitable for further processing.
+
+### Retrieval Augmented Generation (RAG):
+
+The RAG framework enhances the model's reasoning ability by providing ground truth facts relevant to the task at hand. This approach includes creating a dataset of rules, exploring retrievers, and post-processing the retrieved information to improve the model's performance.
+
+### Conclusion:
+
+The Logicator framework significantly improves the performance of LLMs on complex reasoning tasks by providing a structured representation and fact augmentation. The potential applications of this framework extend to various domains requiring enhanced logical reasoning capabilities.
