@@ -9,7 +9,7 @@ img: assets/img/project_2.png
 
 Please find the report for this project [here](https://drive.google.com/file/d/1Wn86lcLZUJkRDxIk1y7nk2yCSkmB23hV/view?usp=sharing).
 
-# Enhancing Term Deposit Subscription Recommendations in Banking through Machine Learning
+# [Enhancing Term Deposit Subscription Recommendations in Banking through Machine Learning](https://drive.google.com/file/d/1Wn86lcLZUJkRDxIk1y7nk2yCSkmB23hV/view?usp=sharing)
 
 ### Project Overview:
 

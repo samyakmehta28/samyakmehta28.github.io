@@ -1,80 +1,70 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
+title: Branch Predictor
+description: This report details the implementation and evaluation of three branch predictors—GShare, Tournament, and Perceptron-based, exploring their effectiveness in minimizing pipeline stalls and improving processor efficiency.
+img: assets/img/project_4.png
 importance: 4
-category: fun
+category: Software Engineering
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+This was my course project for the course Principles in Computer Architecture (CSE240A), completed under the guidance of Professor Jishen Zhao, in collaboration with my batchmate Kunind Sahu, during the WI24 of my graduate studies at the University of California, San Diego.
+The report for this project is available [here](https://github.com/samyakmehta28/CSE240A/blob/master/Branch_Predictor.pdf) and the code is availabe in the github repository [here](https://github.com/samyakmehta28/CSE240A).
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+# [Branch Predictor](https://github.com/samyakmehta28/CSE240A)
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+This project investigates the design, implementation, and evaluation of various branch prediction algorithms, namely GShare, Tournament, and Perceptron-based predictors, to enhance processor performance. The primary objective is to assess these predictors' accuracy and efficiency in minimizing mispredictions in branch instructions, thereby reducing pipeline stalls and improving overall computational throughput.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+### Introduction:
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+Branch prediction is a crucial aspect of modern processor architecture, as it allows for speculative execution of instructions and minimizes delays due to branch mispredictions. This project explores three different branch prediction techniques:
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+- GShare Predictor: Utilizes global branch history to enhance prediction accuracy by leveraging correlations across branches.
+- Tournament Predictor: Combines local and global predictors to dynamically choose the most accurate prediction strategy.
+- Perceptron-based Predictor: Employs a neural network approach to improve prediction by learning patterns in branch behavior.
+  Each predictor is implemented and tested across various benchmark datasets to evaluate their performance in terms of prediction accuracy and computational efficiency.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+### Datasets:
 
-{% raw %}
+- SPEC CPU2006 Benchmarks:
+  A suite of industry-standardized benchmarks designed to test the performance of a processor across a variety of computational tasks. These benchmarks are used to evaluate the effectiveness of the branch predictors in real-world scenarios.
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+- Branch Trace Datasets:
+  Custom datasets containing branch instruction traces collected from different applications, used to test the predictors under various branch prediction scenarios.
 
-{% endraw %}
+### Methodology:
+
+The project involves implementing each of the three branch predictors and evaluating their performance using the specified datasets. The methodology includes:
+
+- Implementation of Predictors:
+
+  - GShare: Combining global history with branch address bits to index into a prediction table.
+  - Tournament: Utilizing both local and global predictors, with a meta-predictor to select the best prediction.
+  - Perceptron: Using a neural network model to make predictions based on historical branch patterns.
+
+- Performance Evaluation:
+
+  - Measuring prediction accuracy, the number of mispredictions, and computational overhead.
+  - Comparing the results across different benchmark datasets to identify the strengths and weaknesses of each predictor.
+
+### Key Findings:
+
+- GShare Predictor:
+  Achieved high prediction accuracy by effectively leveraging global branch history, but showed limitations in handling highly dynamic branch patterns.
+
+- Tournament Predictor:
+  Provided the best overall performance by dynamically selecting between local and global predictions, thus adapting to varying branch behaviors.
+
+- Perceptron-based Predictor:
+  Demonstrated promising results in recognizing complex branch patterns but required significant computational resources, which may limit its practicality for real-time applications.
+
+### Analysis and Categorization of Errors:
+
+The errors encountered in branch prediction were categorized as follows:
+
+- Dynamic Branch Patterns: Challenges in predicting branches with highly variable behavior.
+- Overhead in Neural Networks: Computational complexity associated with the Perceptron-based predictor.
+- Pattern Recognition Limitations: Difficulty in recognizing and predicting highly irregular branch patterns.
+
+### Conclusion:
+
+The project highlights the effectiveness of combining different branch prediction strategies to improve overall prediction accuracy and reduce pipeline stalls. While the GShare and Tournament predictors show robust performance in various scenarios, the Perceptron-based predictor offers potential for future improvements in complex pattern recognition, albeit with higher computational costs.

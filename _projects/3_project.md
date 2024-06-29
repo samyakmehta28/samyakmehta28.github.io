@@ -9,7 +9,7 @@ category: ML & AI
 
 The project report can be found [here](https://github.com/samyakmehta28/Zero-shot-CoT-on-Logical-and-Positional-Reasoning-Tasks/blob/master/report.pdf) and the code can be found in the github repository [here](https://github.com/samyakmehta28/Zero-shot-CoT-on-Logical-and-Positional-Reasoning-Tasks)
 
-# Analysis Study: Zero-shot-CoT-on-Logical-and-Positional-Reasoning-Tasks
+# [Analysis Study: Zero-shot-CoT-on-Logical-and-Positional-Reasoning-Tasks](https://github.com/samyakmehta28/Zero-shot-CoT-on-Logical-and-Positional-Reasoning-Tasks)
 
 ### Overview:
 
