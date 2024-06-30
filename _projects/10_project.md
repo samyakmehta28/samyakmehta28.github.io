@@ -7,7 +7,7 @@ importance: 10
 category: Software Engineering
 ---
 
-I embarked on this project to explore backend technologies such as Django which is a potent stack for crafting scalable web applications. This technology stack ensures swift performance, real-time functionalities, adaptable data modeling, and an extensive library of plugins, making it ideal for contemporary, data-centric web development. The code for these projects can be found in the github repository [here](https://github.com/samyakmehta28/WebBlog).
+I embarked on this project to explore backend technologies such as Django which is a potent stack for crafting scalable web applications. This technology stack ensures swift performance, real-time functionalities, adaptable data modeling, and an extensive library of plugins, making it ideal for contemporary, data-centric web development. The code for this project can be found in the github repository [here](https://github.com/samyakmehta28/WebBlog).
 
 # [WebBlog: Django-Powered Blogging Platform](https://github.com/samyakmehta28/WebBlog)
 
