@@ -2,7 +2,7 @@
 layout: page
 title: Branch Predictor
 description: This report details the implementation and evaluation of three branch predictors—GShare, Tournament, and Perceptron-based, exploring their effectiveness in minimizing pipeline stalls and improving processor efficiency.
-img: assets/img/project_4.png
+img: assets/img/project_4.jpg
 importance: 4
 category: Software Engineering
 ---

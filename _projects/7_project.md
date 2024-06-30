@@ -9,7 +9,7 @@ category: Software Engineering
 
 I created this project as a personal endeavor to learn Angular. I learned Angular-18 to deepen my understanding of building dynamic web applications using TypeScript. Its robust framework offers enhanced code reusability, streamlined development, and the ability to handle complex functionalities efficiently. The code for this project can be found [here](https://github.com/samyakmehta28/HotelInventoryApp).
 
-# Hotel Inventory App: A Frontend Project using Angular
+# [Hotel Inventory App: A Frontend Project using Angular](https://github.com/samyakmehta28/HotelInventoryApp)
 
 ### Overview:
 
