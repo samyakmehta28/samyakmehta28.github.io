@@ -26,5 +26,5 @@ As a highly motivated aspiring software engineer with a passion for innovation, 
 My internship experience at Adobe's Multimodal Content Lab allowed me to develop and patent a novel pipeline for enhancing multimodal documents, showcasing my ability to tackle complex challenges and deliver impactful results. I have further honed my technical skills in HTML, CSS, JavaScript, TypeScript, Node.js, Express.js, Nest.js, React.js through various projects.
 
 <p style="text-align: center;">
-<a href="/assets/pdf/resume_samyak_mehta.pdf">Resume</a>
+<a href="https://drive.google.com/file/d/1TICChWqKtglmdXByuBJtywaxPfFGPbZP/view?usp=sharing">Resume</a>
 </p>
