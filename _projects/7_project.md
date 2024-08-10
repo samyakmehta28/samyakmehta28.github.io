@@ -3,7 +3,7 @@ layout: page
 title: Hotel Inventory App
 description: The Hotel Inventory App in Angular enables user and admin roles for efficient room management and booking, providing a user-friendly interface for adding, editing, viewing, and booking hotel rooms.
 img: assets/img/project_7.png
-importance: 7
+importance: 8
 category: Software Engineering
 ---
 

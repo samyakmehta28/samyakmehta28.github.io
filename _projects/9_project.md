@@ -3,7 +3,7 @@ layout: page
 title: Node.js, Express.js, MongoDB
 description: A comprehensive suite of Node.js and Express.js projects including a Task Manager, RESTful Store API, and Job API, leveraging MongoDB for data storage and demonstrating full-stack JavaScript development proficiency.
 img: assets/img/project_9.jpg
-importance: 9
+importance: 10
 category: Software Engineering
 ---
 

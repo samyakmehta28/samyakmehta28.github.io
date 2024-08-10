@@ -3,7 +3,7 @@ layout: page
 title: Tranformer Encoder and Decoder Tasks
 description: This project involves developing a transformer encoder for politician speech prediction, training a GPT-like decoder for speech generation, and experimenting with architecture variations to enhance model accuracy and perplexity.
 img: assets/img/project_6.png
-importance: 6
+importance: 5
 category: ML & AI
 ---
 

@@ -3,7 +3,7 @@ layout: page
 title: Web-Blog
 description: WebBlog is a Django-based blogging platform featuring user authentication, CRUD operations for posts, like/unlike functionality, and category-based organization, demonstrating comprehensive web development skills using the Django framework.
 img: assets/img/project_10.png
-importance: 10
+importance: 11
 category: Software Engineering
 ---
 

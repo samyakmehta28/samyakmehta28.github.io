@@ -3,7 +3,7 @@ layout: page
 title: Logicator
 description: Logicator is a proposed model to improve logical reasoning in large language models by using structured data and Retrieval-Augmented Generation (RAG), significantly enhancing performance on family relationship puzzles and seating arrangements compared to baseline models like GPT-3.5-turbo.
 img: assets/img/project_5.jpg
-importance: 5
+importance: 4
 category: ML & AI
 ---
 

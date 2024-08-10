@@ -3,7 +3,7 @@ layout: page
 title: Prompt Response Logging System
 description: The GPT Prompt Logging and Analysis App uses Nest.js as backend technology and Streamlit for frontend to log prompts to GPT models, offering real-time response display, detailed statistics, and visual analytics for prompt interactions.
 img: assets/img/project_8.png
-importance: 8
+importance: 9
 category: Software Engineering
 ---
 
