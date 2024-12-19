@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Currently interning as a Software Engineer at Cohrent Corp in Santa Clara, CA.
+Started a summer internship as a Software Engineer at Coherent Corp in Santa Clara, CA.
